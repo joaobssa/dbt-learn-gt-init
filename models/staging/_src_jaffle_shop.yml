@@ -1,0 +1,6 @@
+sources:
+  - name: raw
+    tables:
+      - name: jaffle_shop_customers
+      - name: jaffle_shop_orders
+      - name: stripe_payments

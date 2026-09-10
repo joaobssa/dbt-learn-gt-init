@@ -7,4 +7,5 @@ select
     -- amount is stored in cents. convert to dollars
     AMOUNT / 100 as amount,
     CREATED as created_date
-from raw.stripe_payments
+
+from {{ source('raw', 'stripe_payments')}}
